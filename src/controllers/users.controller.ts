@@ -3,7 +3,7 @@ import { StatusCodes } from 'http-status-codes';
 import Jwt, { SignOptions } from 'jsonwebtoken';
 import UserService from '../services/users.service';
 
-const secret = process.env.SECRET as string;
+const secret = process.env.SECRET || 'chavesegura' as string;
 
 export default class UserController {
   constructor(private userService = new UserService()) {}
