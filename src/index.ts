@@ -1,4 +1,5 @@
 import app from './app';
+import 'express-async-errors';
 
 const PORT = 3000;
 
